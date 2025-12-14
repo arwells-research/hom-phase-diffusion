@@ -216,10 +216,18 @@ The simulations are intentionally minimal, deterministic, and transparent.
 
 ## Citation
 
-If you use this code or data, please cite:
+If you use this code or the associated datasets, please cite the corresponding paper:
 
-*Two-Photon Bunching from Geometric Phase Diffusion:  
-Hong–Ou–Mandel Interference without Wavefunctions*  
-A. R. Wells, 2025.
+**Two-Photon Bunching from Geometric Phase Diffusion:  
+Hong–Ou–Mandel Interference without Wavefunctions**  
+A. R. Wells (2025).
 
-(Zenodo DOI: TBD)
+The code and reproducible data are archived on Zenodo:
+
+**Concept DOI (all versions):**  
+https://doi.org/10.5281/zenodo.17931012
+
+**Version DOI (v1.0.0):**  
+https://doi.org/10.5281/zenodo.17931013
+
+This is an open scholarly release. Reuse and extension are permitted with attribution.
