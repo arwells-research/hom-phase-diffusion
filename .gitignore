@@ -1,0 +1,123 @@
+################################################################################
+# Python / virtualenv / tooling
+################################################################################
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual envs (project-local or per-user)
+.venv/
+venv/
+ENV/
+env/
+
+# Packaging / build metadata
+*.egg-info/
+.eggs/
+build/
+wheelhouse/
+pip-wheel-metadata/
+pip-log.txt
+
+# Test / type / lint caches
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+################################################################################
+# OS / editor / IDE
+################################################################################
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.direnv/
+.envrc
+
+################################################################################
+# Project generated data and outputs (do NOT version)
+################################################################################
+# Reproducible simulation output
+data/generated/
+data/generated/*.csv
+
+# Pipeline outputs (figures, numbers, logs, intermediate files)
+outputs/
+
+# Release bundles (your “assembled artifacts” directory)
+dist/
+
+################################################################################
+# LaTeX build artifacts (everywhere)
+################################################################################
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.dvi
+*.ps
+*.xdv
+*.latexmk
+
+################################################################################
+# Figures / PDFs: ignore generated binaries by default
+################################################################################
+# Generated plots and compiled PDFs should not be tracked
+*.png
+*.svg
+*.pdf
+
+# But DO allow any *hand-authored/static* figures if you create these folders:
+!paper/figures_static/**
+!paper/figures_static/**/*.pdf
+!paper/figures_static/**/*.png
+!paper/figures_static/**/*.svg
+
+################################################################################
+# Safety: explicitly keep sources (optional; not strictly necessary)
+################################################################################
+!README.md
+!LICENSE
+!requirements.txt
+!environment.yml
+!verify.sh
+
+!paper/*.tex
+!paper/*.bib
+!paper/*.sty
+!paper/*.cls
+!paper/*.png
+!paper/*.svg
+# Note: PDFs in paper/ are still ignored (compiled outputs); keep static PDFs
+# only under paper/figures_static/ if you ever need them.
+!scripts/*.py
+!scripts/*.sh
+!src/**/*.py

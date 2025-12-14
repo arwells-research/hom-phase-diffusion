@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, please cite the associated paper. This is an open
+  scholarly release; reuse and extension are permitted with attribution.
+title: "HOM Phase Diffusion (DFT)"
+type: software
+authors:
+  - family-names: Wells
+    given-names: "A. R."
+    affiliation: "Dual-Frame Research Group"
+repository-code: "https://github.com/arwells-research/hom-phase-diffusion"
+license: MIT
+keywords:
+  - Hong–Ou–Mandel
+  - HOM interference
+  - geometric phase diffusion
+  - Dual-Frame Theory
+  - quantum optics
+  - foundations of quantum mechanics
+  - reproducible research
+
+abstract: >-
+  Code and reproducible datasets supporting the paper
+  "Two-Photon Bunching from Geometric Phase Diffusion: Hong–Ou–Mandel
+  Interference without Wavefunctions".
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Wells
+      given-names: "A. R."
+      affiliation: "Dual-Frame Research Group"
+  title: >-
+    Two-Photon Bunching from Geometric Phase Diffusion: Hong–Ou–Mandel
+    Interference without Wavefunctions
+  year: 2025
+  publisher: Zenodo
+  doi: "TBD-PAPER-DOI"
+  url: "TBD-PAPER-URL"
+  license: CC-BY-4.0
+
+identifiers:
+  - type: doi
+    value: "TBD-REPO-DOI"
+    description: "Zenodo DOI for the archived software/repository release"
+
+notes: >-
+  Correspondence and media contact are not solicited.
