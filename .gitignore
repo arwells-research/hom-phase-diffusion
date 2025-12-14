@@ -6,6 +6,7 @@ __pycache__/
 *$py.class
 
 # Virtual envs (project-local or per-user)
+.venv
 .venv/
 venv/
 ENV/
