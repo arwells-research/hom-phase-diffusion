@@ -2121,17 +2121,27 @@ All simulations used in this paper are deterministic given:
 (i) the random seed,
 (ii) the motion-step distribution, and
 (iii) the source bandwidth parameter.
-All simulation code and data used in this paper will be made available
-upon publication in a version-controlled public repository, including:
-(i) scripts to reproduce the phase-diffusion and HOM simulation
+
+All simulation code and data used in this paper are publicly available in
+a version-controlled repository, including:
+(i) scripts to reproduce the phase-diffusion and Hong--Ou--Mandel simulation
 results, (ii) CSV files containing the numerical data (variance curves,
 coherence envelopes, and HOM coincidence statistics), and
-(iii) plotting routines for Figs.~\ref{fig:pure_diffusion}--\ref{fig:hom_comparison}.  CSV output files include:
+(iii) plotting routines for Figs.~\ref{fig:pure_diffusion}--\ref{fig:hom_comparison}.
+
+The repository is hosted at
+\texttt{https://github.com/arwells-research/hom-phase-diffusion} and is
+archived on Zenodo under the concept DOI
+\texttt{https://doi.org/10.5281/zenodo.17931012}, which resolves to the
+latest released version.
+
+CSV output files include:
 \begin{itemize}
 \item $N$, $\mathrm{Var}[\Delta\theta(N)]$, and $c(N)$ for diffusion studies;
 \item $\tau$ and coincidence probabilities for HOM studies;
 \item fitted parameters and confidence intervals.
 \end{itemize}
+
 These datasets are sufficient for independent reproduction of all plots
 and statistical results in the main text.
 
