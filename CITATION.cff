@@ -1,11 +1,12 @@
 cff-version: 1.2.0
+
 message: >-
   If you use this repository, please cite the associated paper. This is an open
   scholarly release; reuse and extension are permitted with attribution.
 
 title: "HOM Phase Diffusion (DFT)"
 type: software
-version: "v1.0.0"
+version: "v1.0.1"
 date-released: "2025-12-14"
 
 authors:
@@ -22,13 +23,14 @@ keywords:
   - geometric phase diffusion
   - Dual-Frame Theory
   - quantum optics
-  - foundations of quantum mechanics
+  - deterministic simulations
+  - Monte Carlo simulation
   - reproducible research
 
 abstract: >-
   Code and reproducible datasets supporting the paper
-  "Two-Photon Bunching from Geometric Phase Diffusion: Hong–Ou–Mandel
-  Interference without Wavefunctions".
+  "Two-Photon Bunching from Geometric Phase Diffusion:
+  Hong–Ou–Mandel Interference without Wavefunctions".
 
 identifiers:
   - type: doi
@@ -42,16 +44,15 @@ preferred-citation:
       given-names: "A. R."
       affiliation: "Dual-Frame Research Group"
   title: >-
-    Two-Photon Bunching from Geometric Phase Diffusion: Hong–Ou–Mandel
-    Interference without Wavefunctions
+    Two-Photon Bunching from Geometric Phase Diffusion:
+    Hong–Ou–Mandel Interference without Wavefunctions
   year: 2025
   publisher: Zenodo
-  note: >-
-    Preprint / open scholarly release. The paper is associated with
-    the archived software and datasets.
+  doi: "10.5281/zenodo.17933940"
   license: CC-BY-4.0
 
 notes: >-
   Open scholarly release under CC BY 4.0.
   Reuse and extension are permitted with attribution.
   Correspondence and media contact are not solicited.
+  
