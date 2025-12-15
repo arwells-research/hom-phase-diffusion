@@ -1709,7 +1709,7 @@ DFT adopts a single invariant scalar progression parameter $\lambda$
 that maps into spatial displacement and T-frame phase displacement.
 For convenience we work in dimensionless ``natural'' units in which a
 single progression step carries unit budget. At each discrete step,
-Eq.~\eqref{eq:motion-budget}.
+the increments satisfy Eq.~\eqref{eq:motion-budget},
 where $\Delta x$ is the S-frame spatial increment (in units of a
 characteristic microscopic length $\ell_{0}$) and $\Delta\theta$ is
 the T-frame phase increment (in radians). Restoring dimensions, the
@@ -1798,38 +1798,6 @@ consistent with this geometric expectation within statistical uncertainty.
 
 The numerical experiments of Sec.~\ref{sec:phase-diffusion}
 give $D = 0.985 \pm 0.003$.
-
-A simple geometric argument shows why a diffusion coefficient of order
-unity, and in fact $D\approx 1$, is natural in the normalized units of
-Eq.~\eqref{eq:motion-budget}. Consider the space of microscopic increments
-$(\Delta x,\Delta\theta)$ satisfying $(\Delta x)^{2} + (\Delta\theta)^{2}=1$.
-If the stepping rule samples this unit circle isotropically, then
-$\Delta x$ and $\Delta\theta$ are marginally distributed with zero
-mean and equal second moments,
-\[
-    \E[(\Delta x)^{2}] = \E[(\Delta\theta)^{2}] = \frac{1}{2}.
-\]
-For a single trajectory the phase increment per step therefore obeys
-$\Var(\Delta\theta) = 1/2$. The relative phase between two
-independently stepped trajectories $A$ and $B$ is
-\[
-    \Delta\theta_{AB} = \Delta\theta^{(A)} - \Delta\theta^{(B)},
-\]
-with variance
-\[
-    \Var(\Delta\theta_{AB})
-    = \Var(\Delta\theta^{(A)}) + \Var(\Delta\theta^{(B)})
-    = \frac{1}{2} + \frac{1}{2}
-    = 1,
-\]
-assuming the increments for $A$ and $B$ are uncorrelated.
-Under these idealized isotropy assumptions one obtains $D=1$ exactly
-for the per-step variance of the relative phase. The Monte Carlo
-results of Sec.~\ref{sec:phase-diffusion}, which give
-$D = 0.985 \pm 0.003$, are therefore consistent with the geometric
-expectation that $D$ is fixed to unity in the normalized units by the
-combination of the motion budget and isotropic sampling of the
-increment space.
 
 \paragraph{Justification of weak step independence.}
 Although $\Delta x$ and $\Delta\theta$ are coupled within each step by
@@ -1927,15 +1895,26 @@ Fourier mode of the phase distribution.
 
 \subsection{Crossover Regime}
 
-The crossover occurs where
+The crossover occurs where the linear and quadratic contributions to the
+exponent are comparable,
 \begin{equation}
 aN \sim bN^{2}
 \qquad\Rightarrow\qquad
 N \sim \frac{a}{b}
      = \frac{D}{\sigma_{\omega}^{2}}.
 \end{equation}
-For $N \ll D/\sigma_{\omega}^{2}$, bandwidth dominates (Gaussian behavior).
-For $N \gg D/\sigma_{\omega}^{2}$, intrinsic diffusion dominates (exponential behavior).
+
+For $N \ll D/\sigma_{\omega}^{2}$, the linear term dominates and the coherence
+decays approximately exponentially,
+\[
+c(N) \simeq \exp(-aN).
+\]
+
+For $N \gg D/\sigma_{\omega}^{2}$, the quadratic term dominates and the
+coherence exhibits approximately Gaussian decay in $N$,
+\[
+c(N) \simeq \exp(-bN^{2}).
+\]
 
 \subsection{Continuum Perspective}
 
@@ -1979,7 +1958,7 @@ would represent new physics. Providing analytic bounds on
 $D(\delta\sigma)$ and identifying which branch is realized is therefore
 a key target for future work (see Sec.~\ref{sec:discussion}).
 
-\section{Appendix B: Simulation Methodology and Statistical Analysis}
+\section{Simulation Methodology and Statistical Analysis}
 \label{appendix:simulation}
 
 \subsection{Overview of Numerical Procedure}
@@ -2122,8 +2101,9 @@ All simulations used in this paper are deterministic given:
 (ii) the motion-step distribution, and
 (iii) the source bandwidth parameter.
 
-All simulation code and data used in this paper are publicly available in
-a version-controlled repository, including:
+All simulation code and reproducible datasets underlying the results in
+this paper are publicly available in a version-controlled repository,
+including:
 (i) scripts to reproduce the phase-diffusion and Hong--Ou--Mandel simulation
 results, (ii) CSV files containing the numerical data (variance curves,
 coherence envelopes, and HOM coincidence statistics), and
@@ -2145,7 +2125,7 @@ CSV output files include:
 These datasets are sufficient for independent reproduction of all plots
 and statistical results in the main text.
 
-\section{Appendix C: Beamsplitter Symmetry Constraints and Geometric Interpretation}
+\section{Beamsplitter Symmetry Constraints and Geometric Interpretation}
 \label{appendix:beamsplitter}
 
 \subsection{Discrete Symmetry Constraints}
