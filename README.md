@@ -1,5 +1,7 @@
 # HOM Phase Diffusion (DFT)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17931012.svg)](https://doi.org/10.5281/zenodo.17931012)
+
 **Reproducible Research Artifact — Deterministic, Physics-Verified**
 
 Code and generated datasets supporting the paper:
